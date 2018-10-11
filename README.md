@@ -79,13 +79,11 @@ XYFAlertView is provided under the MIT license. See LICENSE file for details.
 ==============
 XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。  
 
-<br/><br/>
----
 Sample styles preview（举例样式预览图）
 ==============
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_1.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_2.gif)
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_3.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_4.gif)
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_6.gif)  <br/>
+![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_6.gif)
 # Contact me (联系我)  
 QQ：2016003298  
 微信（WeChat）：yz33915958
