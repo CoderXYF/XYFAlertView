@@ -79,8 +79,7 @@ XYFAlertView is provided under the MIT license. See LICENSE file for details.
 ==============
 XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。  
 
-# Preview:
-### Sample styles（举例样式）:
+# Sample styles preview（举例样式预览图）:
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_1.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_2.gif)
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_3.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_4.gif)
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_6.gif)  
