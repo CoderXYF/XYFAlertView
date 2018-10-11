@@ -80,14 +80,11 @@ XYFAlertView is provided under the MIT license. See LICENSE file for details.
 XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。  
 
 # Preview:
-### Sample style 1:
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_1.gif)　　### Sample style 2:
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_2.gif)  
-### Sample style 3:
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_3.gif)　　### Sample style 4:
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_4.gif)  
-### Sample style 5:
-![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.gif)　　### Sample style 6:
+### Sample styles:
+![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_1.gif)　　![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_2.gif)
+![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_3.gif)
+![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_4.gif)
+![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.gif)
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_6.gif)  
 # Contact me (联系我)  
 QQ：2016003298  
