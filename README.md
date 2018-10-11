@@ -7,7 +7,7 @@ Usage
 ### Class method calls, input parameters to display corresponding styles.
 ```objc
 // Example
-[XYFAlertView showAlertWithTitle:@"title1" subtitle:@"subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1" subtitleColor:[UIColor orangeColor] isLeftButtonRed:NO buttonTitles:@[@"button left", @"button right"] leftButtonClickAction:^{  
+[XYFAlertView showAlertWithTitle:@"title1" subtitle:@"subtitle1subtitle1subtitle1subtitle1subtitle1subtitle1" subtitleColor:[UIColor orangeColor] isLeftButtonRed:NO buttonTitles:@[@"button left", @"button right"] leftButtonClickAction:^{  
 
 } rightButtonClickAction:^{  
 
