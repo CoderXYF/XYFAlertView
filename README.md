@@ -92,3 +92,6 @@ XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_5.PNG)  
 ### Sample style 6:
 ![img](https://github.com/CoderXYF/XYFAlertView/blob/master/XYFAlertView/SampleStyleImages/sample_style_6.PNG)  
+# Contact me (联系我)  
+QQ：2016003298  
+微信（WeChat）：yz33915958
