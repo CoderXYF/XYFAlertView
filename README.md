@@ -77,8 +77,7 @@ XYFAlertView is provided under the MIT license. See LICENSE file for details.
 
 许可证
 ==============
-XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。 
-
+XYFAlertView 使用 MIT 许可证，详情见 LICENSE 文件。
 <br/><br/>
 ---
 Sample styles preview（举例样式预览图）
