@@ -1,18 +1,18 @@
 //
-//  XYFMainViewController.h
+//  XYFStsObj.h
 //  NewProjects
 //
 //  Created by Mac on 2018/6/4.
 //  Copyright © 2018年 DSOperation. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XYFMainViewController : UIViewController
+@interface XYFStsObj : NSObject
 
-@property (nonatomic, copy) NSString *strBy;
+@property (nonatomic, assign) AFNetworkReachabilityStatus status;
 
 @end
 

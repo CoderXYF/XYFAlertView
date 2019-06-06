@@ -1,25 +1,25 @@
 //
-//  XYFMainViewController.m
+//  XYFColorVC.m
 //  NewProjects
 //
 //  Created by Mac on 2018/6/4.
 //  Copyright © 2018年 DSOperation. All rights reserved.
 //
 
-#import "XYFMainViewController.h"
+#import "XYFColorVC.h"
 #import "XYFAlertView.h"
 #import "XYFProgressLayer.h"
 #import "UIWebView+XYFProgress.h"
 #import "XYFCleanCache.h"
 #import "MBProgressHUD.h"
 
-@interface XYFMainViewController () <UIWebViewDelegate>
+@interface XYFColorVC () <UIWebViewDelegate>
 
 @property (nonatomic, strong) UIWebView *ldView;
 
 @end
 
-@implementation XYFMainViewController
+@implementation XYFColorVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
