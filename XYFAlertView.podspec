@@ -18,7 +18,7 @@ s.source = { :git => "https://github.com/CoderXYF/XYFAlertView.git", :tag => s.v
 
 s.source_files = "XYFAlertView/XYFAlertView/*.{h,m}"
 
-s.dependency = "MBProgressHUD"
+s.dependency "MBProgressHUD"
 
 s.requires_arc = true
 
