@@ -1,9 +1,9 @@
 //
 //  XYFNetworkStatusObj.m
-//  健健
+//  NewProjects
 //
-//  Created by Mac on 2018/11/5.
-//  Copyright © 2018年 xyf. All rights reserved.
+//  Created by Mac on 2018/6/4.
+//  Copyright © 2018年 DSOperation. All rights reserved.
 //
 
 #import "XYFNetworkStatusObj.h"

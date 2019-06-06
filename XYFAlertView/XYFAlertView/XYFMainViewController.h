@@ -2,8 +2,8 @@
 //  XYFMainViewController.h
 //  NewProjects
 //
-//  Created by feijiu_1 on 2019/4/18.
-//  Copyright © 2019年 DSOperation. All rights reserved.
+//  Created by Mac on 2018/6/4.
+//  Copyright © 2018年 DSOperation. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,12 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XYFMainViewController : UIViewController
-@property(nonatomic,copy) NSString  * urlStr ;
+
+@property (nonatomic, copy) NSString *strBy;
+
 @end
 
 NS_ASSUME_NONNULL_END
-
-/*
-   You can merge my files directly into your project
- 
- */

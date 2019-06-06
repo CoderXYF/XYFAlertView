@@ -12,13 +12,13 @@
 #define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
 
 #define Normal_Space 15
-#define Normal_Font [UIFont systemFontOfSize:15.f] // 常规字体
-#define Middle_Font [UIFont systemFontOfSize:14.f] // 中型字体
+#define Normal_Font [UIFont systemFontOfSize:15.f]
+#define Middle_Font [UIFont systemFontOfSize:14.f]
 
 static UIView *mainBgView = nil;
 static UIView *alertBgView = nil;
-static void(^leftButtonClickActionBlock)(void) = NULL;
-static void(^rightButtonClickActionBlock)(void) = NULL;
+static void(^leftButtonClickActionBlock)(void) = nil;
+static void(^rightButtonClickActionBlock)(void) = nil;
 
 @implementation XYFAlertView
 
@@ -31,7 +31,7 @@ static void(^rightButtonClickActionBlock)(void) = NULL;
     
     alertBgView = [[UIView alloc] init];
     alertBgView.backgroundColor = [UIColor whiteColor];
-    alertBgView.frame = CGRectMake((ScreenWidth - 283) * 0.5, (ScreenHeight - (subtitle.length?158:132)) * 0.5, 283, subtitle.length?158:132);
+    alertBgView.frame = CGRectMake((ScreenWidth - 296) * 0.5, (ScreenHeight - (subtitle.length?158:132)) * 0.5, 296, subtitle.length?158:132);
     alertBgView.layer.cornerRadius = 9;
     alertBgView.layer.masksToBounds = YES;
     [mainBgView addSubview:alertBgView];
@@ -149,8 +149,8 @@ static void(^rightButtonClickActionBlock)(void) = NULL;
     [mainBgView removeFromSuperview];
     mainBgView = nil;
     alertBgView = nil;
-    leftButtonClickActionBlock = NULL;
-    rightButtonClickActionBlock = NULL;
+    leftButtonClickActionBlock = nil;
+    rightButtonClickActionBlock = nil;
 }
 
 @end
