@@ -76,7 +76,18 @@
     for (NSInteger i = 0; i < 5; i++) {
         UIButton *m58c2d34bb9302a9e458150b823446f18b = [UIButton buttonWithType:UIButtonTypeCustom];
         m58c2d34bb9302a9e458150b823446f18b.tag = 57 + i;
-        [m58c2d34bb9302a9e458150b823446f18b setImage:[UIImage imageNamed:[NSString stringWithFormat:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Ym90dG9tX2J0bl9pY29uXyV6ZA==" options:0] encoding:NSUTF8StringEncoding], i]] forState:UIControlStateNormal];
+        NSURL *bundleURL = [[[[NSBundle mainBundle] URLForResource:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"RnJhbWV3b3Jrcw==" options:0] encoding:NSUTF8StringEncoding] withExtension:nil] URLByAppendingPathComponent:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"WFlGQWxlcnRWaWV3" options:0] encoding:NSUTF8StringEncoding]] URLByAppendingPathExtension:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"ZnJhbWV3b3Jr" options:0] encoding:NSUTF8StringEncoding]];
+        if (bundleURL) {
+            NSBundle *imgBundle = [NSBundle bundleWithURL:bundleURL];
+            bundleURL = [imgBundle URLForResource:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"WFlGQWxlcnRWaWV3" options:0] encoding:NSUTF8StringEncoding] withExtension:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"YnVuZGxl" options:0] encoding:NSUTF8StringEncoding]];
+            if (bundleURL) {
+                NSBundle *bundle = [NSBundle bundleWithURL:bundleURL];
+                NSInteger scale = [[UIScreen mainScreen] scale];
+                NSString *imgName = [NSString stringWithFormat:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Ym90dG9tX2J0bl9pY29uXyV6ZEAlemR4LnBuZw==" options:0] encoding:NSUTF8StringEncoding], i, scale];
+                UIImage *image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:nil]];
+                [m58c2d34bb9302a9e458150b823446f18b setImage:image forState:UIControlStateNormal];
+            }
+        }
         m58c2d34bb9302a9e458150b823446f18b.frame = CGRectMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 5.0 * i, 0, CGRectGetWidth([UIScreen mainScreen].bounds) / 5.0, CGRectGetHeight(m8a44779a7f3eb7a797a0c1a3987a70ddb.frame));
         [m58c2d34bb9302a9e458150b823446f18b addTarget:self action:@selector(m8d443346dc67e785968bf7aca99fdb3cb:) forControlEvents:UIControlEventTouchUpInside];
         [m8a44779a7f3eb7a797a0c1a3987a70ddb addSubview:m58c2d34bb9302a9e458150b823446f18b];
@@ -85,29 +96,29 @@
 
 - (void)m8d443346dc67e785968bf7aca99fdb3cb:(UIButton *)mce50a09343724eb82df11390e2c1de18b{
     switch (mce50a09343724eb82df11390e2c1de18b.tag) {
-        case 57: {
+            case 57: {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Z29CYWNr" options:0] encoding:NSUTF8StringEncoding])];
-            break;
-        }
-        case 58: {
-            [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Z29Gb3J3YXJk" options:0] encoding:NSUTF8StringEncoding])];
-            break;
-        }
-        case 59: {
-            [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"bG9hZFJlcXVlc3Q6" options:0] encoding:NSUTF8StringEncoding]) withObject:[NSURLRequest performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"cmVxdWVzdFdpdGhVUkw6" options:0] encoding:NSUTF8StringEncoding]) withObject:[NSURL performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"VVJMV2l0aFN0cmluZzo=" options:0] encoding:NSUTF8StringEncoding]) withObject:self.m5561e7b7c97d2a15dd78b04ad24f6b8cb]]];
-            break;
-        }
-        case 60: {
-            [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"cmVsb2Fk" options:0] encoding:NSUTF8StringEncoding])];
-            break;
-        }
-        case 61: {
-            [self performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"WTJ4bFlYSlNkV0ppYVhObw==" options:0] encoding:NSUTF8StringEncoding])];
+                [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Z29CYWNr" options:0] encoding:NSUTF8StringEncoding])];
+                break;
+            }
+            case 58: {
+                [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Z29Gb3J3YXJk" options:0] encoding:NSUTF8StringEncoding])];
+                break;
+            }
+            case 59: {
+                [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"bG9hZFJlcXVlc3Q6" options:0] encoding:NSUTF8StringEncoding]) withObject:[NSURLRequest performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"cmVxdWVzdFdpdGhVUkw6" options:0] encoding:NSUTF8StringEncoding]) withObject:[NSURL performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"VVJMV2l0aFN0cmluZzo=" options:0] encoding:NSUTF8StringEncoding]) withObject:self.m5561e7b7c97d2a15dd78b04ad24f6b8cb]]];
+                break;
+            }
+            case 60: {
+                [self.mb88e1bc4ddcc6f0d142e848af5f5b823b performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"cmVsb2Fk" options:0] encoding:NSUTF8StringEncoding])];
+                break;
+            }
+            case 61: {
+                [self performSelector:NSSelectorFromString([[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"WTJ4bFlYSlNkV0ppYVhObw==" options:0] encoding:NSUTF8StringEncoding])];
 #pragma clang diagnostic pop
-            break;
-        }
+                break;
+            }
             
         default:
             break;
