@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.name = "XYFAlertView"
 
-s.version = "1.2.4"
+s.version = "1.3.0"
 
 s.summary = "A simple, easy to use, variety of prompting operation frame"
 
@@ -20,12 +20,12 @@ s.platform = :ios, '8.0'
 
 s.requires_arc = true
 
-s.source = { :git => "https://github.com/CoderXYF/XYFAlertView.git", :tag => "1.2.4" }
+s.source = { :git => "https://github.com/CoderXYF/XYFAlertView.git", :tag => "1.3.0" }
 
 s.source_files = "XYFAlertView/XYFAlertView/*.{h,m}"
 
 s.resource_bundles = {
-    'XYFAlertView' => ['XYFAlertView/Assets/*']
+    'XYFAlertView' => ['XYFAlertView/XYFAlertView/Images/*']
 }
 
 s.framework = "UIKit"
