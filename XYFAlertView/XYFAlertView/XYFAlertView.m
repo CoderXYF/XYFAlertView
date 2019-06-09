@@ -1,9 +1,9 @@
 //
 //  XYFAlertView.m
-//  NewProjects
+//  m10186d20499d3a7cf84e757c710db8a9b
 //
-//  Created by Mac on 2018/6/4.
-//  Copyright © 2018年 DSOperation. All rights reserved.
+//  Created by m1748c0644a50090814d3e170723ccc5cb on 2018/6/4.
+//  Copyright © 2018 ma511b124024ef67ced53eb81e3821a0ab. All rights reserved.
 //
 
 #import "XYFAlertView.h"
@@ -36,7 +36,6 @@ static void(^rightButtonClickActionBlock)(void) = nil;
     alertBgView.layer.masksToBounds = YES;
     [mainBgView addSubview:alertBgView];
     
-    // 标题
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = title;
     titleLabel.font = [UIFont boldSystemFontOfSize:18.f];
@@ -61,7 +60,6 @@ static void(^rightButtonClickActionBlock)(void) = nil;
     titleLabel.frame = titleLabelFrame_2;
     [alertBgView addSubview:titleLabel];
     
-    // 副标题
     UILabel *subtitleLabel = [[UILabel alloc] init];
     subtitleLabel.text = subtitle;
     subtitleLabel.font = Normal_Font;
@@ -127,7 +125,7 @@ static void(^rightButtonClickActionBlock)(void) = nil;
         [alertBgView addSubview:rightButton];
     }
     alertBgView.frame = CGRectMake((ScreenWidth - alertBgView.bounds.size.width) * 0.5, (ScreenHeight - alertBgView.bounds.size.height) * 0.5, alertBgView.bounds.size.width, alertBgView.bounds.size.height);
-    // show
+
     [[UIApplication sharedApplication].keyWindow addSubview:mainBgView];
 }
 

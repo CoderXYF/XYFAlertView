@@ -1,9 +1,9 @@
 //
 //  XYFProgressLayer.m
-//  NewProjects
+//  m10186d20499d3a7cf84e757c710db8a9b
 //
-//  Created by XYF on 2018/6/4.
-//  Copyright © 2018年 XYF. All rights reserved.
+//  Created by m1748c0644a50090814d3e170723ccc5cb on 2018/6/4.
+//  Copyright © 2018 ma511b124024ef67ced53eb81e3821a0ab. All rights reserved.
 //
 
 #import "XYFProgressLayer.h"
@@ -93,7 +93,6 @@ static NSTimeInterval const progressInterval = 0.001;
     }
 }
 
-/** 进度开始 */
 - (void)progressAnimationStart {
     self.hidden = NO;
     if (_timer) {
@@ -103,7 +102,6 @@ static NSTimeInterval const progressInterval = 0.001;
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 
-/** 进度结束 */
 - (void)progressAnimationCompletion {
     [self invalidateTimer];
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(progressChanged:) object:nil];
@@ -115,10 +113,10 @@ static NSTimeInterval const progressInterval = 0.001;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.hidden = YES;
-        _stepWidth = 0.001;
+        self->_stepWidth = 0.001;
         self.strokeEnd = 0;
-        _gradientLayer.locations = @[@(self.strokeEnd/2), @(self.strokeEnd)];
-        _gradientLayer.frame = CGRectMake(0, 0, 0, _lineHeight);
+        self->_gradientLayer.locations = @[@(self.strokeEnd/2), @(self.strokeEnd)];
+        self->_gradientLayer.frame = CGRectMake(0, 0, 0, self->_lineHeight);
     });
 }
 

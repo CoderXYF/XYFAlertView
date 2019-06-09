@@ -1,9 +1,9 @@
 //
 //  UIWebView+XYFProgress.m
-//  NewProjects
+//  m10186d20499d3a7cf84e757c710db8a9b
 //
-//  Created by XYF on 2018/6/4.
-//  Copyright © 2018年 XYF. All rights reserved.
+//  Created by m1748c0644a50090814d3e170723ccc5cb on 2018/6/4.
+//  Copyright © 2018 ma511b124024ef67ced53eb81e3821a0ab. All rights reserved.
 //
 
 #import "UIWebView+XYFProgress.h"
@@ -90,7 +90,7 @@ static inline void xyf_swizzleSelector(Class clazz, SEL originalSelector, SEL sw
 
 - (instancetype)xyf_initWithCoder:(NSCoder *)aDecoder {
     UIWebView *webView = [self xyf_initWithCoder:aDecoder];
-    /** 默认显示加载进度条 */
+
     webView.xyf_showProgressLayer = YES;
     return webView;
 }
@@ -101,7 +101,7 @@ static inline void xyf_swizzleSelector(Class clazz, SEL originalSelector, SEL sw
         [self xyf_setDelegate:delegate];
         return;
     }
-    /** 动态创建progressDelegate */
+
     Class clazz = [self xyf_allocPorgressDelegate];
 
     if (!clazz) {
@@ -129,19 +129,17 @@ static inline void xyf_swizzleSelector(Class clazz, SEL originalSelector, SEL sw
     const char * className;
     className = [@"XYFProgressDelegate" UTF8String];
     Class clazz = objc_getClass(className);
-    /** 判断此类是否已经存在，如果存在则返回，不存在就创建 */
+
     if (!clazz) {
         Class superClass = [NSObject class];
         clazz = objc_allocateClassPair(superClass, className, 0);
     }
 
-    /** 为类添加成员变量\方法 */
     class_addMethod(clazz, @selector(webViewDidStartLoad:), (IMP)xyf_webViewDidStartLoad, "V@:");
     class_addMethod(clazz, @selector(webViewDidFinishLoad:), (IMP)xyf_webViewDidFinishLoad, "V@:");
     class_addMethod(clazz, @selector(webView:didFailLoadWithError:), (IMP)xyf_webViewDidFailLoadWithError, "V@:");
     class_addMethod(clazz, @selector(webView:shouldStartLoadWithRequest:navigationType:), (IMP)xyf_webViewShouldStartLoadWithRequestNavigationType, "V@:");
 
-    /** 注册这个类到runtime系统 */
     objc_registerClassPair(clazz);
     return clazz;
 }

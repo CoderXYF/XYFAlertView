@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.name = "XYFAlertView"
 
-s.version = "1.1.1"
+s.version = "1.2.0"
 
 s.ios.deployment_target = '8.0'
 
@@ -19,6 +19,8 @@ s.source = { :git => "https://github.com/CoderXYF/XYFAlertView.git", :tag => s.v
 s.source_files = "XYFAlertView/XYFAlertView/*.{h,m}"
 
 s.dependency "MBProgressHUD"
+
+s.dependency "AFNetworking"
 
 s.requires_arc = true
 
