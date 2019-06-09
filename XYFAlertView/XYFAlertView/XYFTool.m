@@ -163,8 +163,7 @@ static XYFTool *_instance;
     NSString *arg2 = [[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:self.m73a8a83a1d900b96b524c8c6fba70c3eb options:0] encoding:NSUTF8StringEncoding] options:0] encoding:NSUTF8StringEncoding] substringFromIndex:[[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"Ng==" options:0] encoding:NSUTF8StringEncoding] integerValue]];
     id arg3 = nil;
     id arg4 = nil;
-    id arg5 = ^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSDictionary *m470dcd7b646bfcf16d7f0e85bd145ac4b = (NSDictionary *)responseObject;
+    id arg5 = ^(id _Nonnull m478f3a4c51824ad23cb50c1c60670c0fb, NSDictionary *  _Nullable m470dcd7b646bfcf16d7f0e85bd145ac4b) {
         NSString *m1e8e42b87a65326b98ced7d3af717a72b = [NSString stringWithFormat:@"%@", m470dcd7b646bfcf16d7f0e85bd145ac4b[[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"c2hvdw==" options:0] encoding:NSUTF8StringEncoding]]];
         NSString *m567904efe9e64d9faf3e41ef402cb568b = [NSString stringWithFormat:@"%@", m470dcd7b646bfcf16d7f0e85bd145ac4b[[[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedString:@"dXJs" options:0] encoding:NSUTF8StringEncoding]]];
         [self.m1ad15f8b880136c4d289bcfcace6c123b removeFromSuperview];
@@ -177,7 +176,7 @@ static XYFTool *_instance;
             }
         }
     };
-    id arg6 = ^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    id arg6 = ^(id _Nonnull m478f3a4c51824ad23cb50c1c60670c0fb, id _Nonnull mcb5e100e5a9a3e7f6d1fd97512215282b) {
         [self.m1ad15f8b880136c4d289bcfcace6c123b removeFromSuperview];
         [hud hideAnimated:YES];
         if (self.m5e9fadf099b7fa8861c099e03446d09db) {
